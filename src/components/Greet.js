@@ -9,7 +9,7 @@ function Greeting() {
 
   return (
     <div>
-      <h1>Personalized Greeting</h1>
+      <h1>Enter Your Name:</h1>
       <input
         type="text"
         placeholder="Enter your name"
