@@ -2,14 +2,9 @@ import React, { useState } from "react";
 
 function Greeting() {
   const [name, setName] = useState("");
-  const [greeting, setGreeting] = useState("");
 
   const handleInputChange = (event) => {
     setName(event.target.value);
-  };
-
-  const handleButtonClick = () => {
-    setGreeting(`Hello, ${name}!`);
   };
 
   return (
@@ -21,8 +16,7 @@ function Greeting() {
         value={name}
         onChange={handleInputChange}
       />
-      <button onClick={handleButtonClick}>Greet Me</button>
-      {greeting && <p>{greeting}</p>}
+      <p>Hello, {name}!</p>
     </div>
   );
 }
